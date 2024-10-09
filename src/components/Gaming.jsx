@@ -3,6 +3,7 @@ import gsap from "gsap";
 import pubg2 from "../assets/pubg2.png";
 import freefire2 from "../assets/freefire2.png";
 import tekken8 from "../assets/tekken82.png";
+import { Link } from "react-router-dom";
 
 function Gaming() {
   useGSAP(() => {
@@ -43,21 +44,27 @@ function Gaming() {
         <span className="word3 text-white">GAME </span>
       </div>
       <div className="flex flex-wrap justify-center mt-20 ">
-        <img
-          className="word4 h-48 sm:h-60 md:h-72 lg:h-80 transform hover:scale-110 hover:opacity-90 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
-          src={pubg2}
-          alt="PUBG"
-        />
-        <img
-          className="word4 h-48 sm:h-60 md:h-72 lg:h-80 transform hover:scale-110 hover:opacity-90 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
-          src={freefire2}
-          alt="Free Fire"
-        />
-        <img
-          className="word4 h-48 sm:h-60 md:h-72 lg:h-80 transform hover:scale-110 hover:opacity-90 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
-          src={tekken8}
-          alt="Tekken 8"
-        />
+        <Link to="pubg">
+          <img
+            className="word4 h-48 sm:h-60 md:h-72 lg:h-80 transform hover:scale-110 hover:opacity-90 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+            src={pubg2}
+            alt="PUBG"
+          />
+        </Link>
+        <Link to="freefire">
+          <img
+            className="word4 h-48 sm:h-60 md:h-72 lg:h-80 transform hover:scale-110 hover:opacity-90 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+            src={freefire2}
+            alt="Free Fire"
+          />
+        </Link>
+        <Link to="tekken8">
+          <img
+            className="word4 h-48 sm:h-60 md:h-72 lg:h-80 transform hover:scale-110 hover:opacity-90 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+            src={tekken8}
+            alt="Tekken 8"
+          />
+        </Link>
       </div>
     </>
   );

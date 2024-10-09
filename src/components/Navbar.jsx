@@ -3,6 +3,11 @@ import menu from "../assets/manuicon.png";
 import Banner from "./Banner";
 import Gaming from "./Gaming";
 import { Route, Routes, Link } from "react-router-dom";
+import Pubg from "./Pubg";
+
+import Tekken8 from "./Tekken8";
+import Freefire from "./Freefire";
+import Aboutus from "./Aboutus";
 function Navbar() {
   return (
     <div>
@@ -23,9 +28,11 @@ function Navbar() {
             <Link to="/">HOME</Link>
           </li>
           <li className="cursor-pointer">
-            <Link to="/gaming">GAMING</Link>
+            <Link to="gaming">GAMING</Link>
           </li>
-          <li className="cursor-pointer">ABOUT US</li>
+          <li className="cursor-pointer">
+            <Link to="aboutus">ABOUT US</Link>
+          </li>
         </ul>
         <div className="cursor-pointer py-3 ">
           <img className="h-full max-h-4 " src={menu} alt="manu" />
@@ -36,6 +43,10 @@ function Navbar() {
         <Route path="/" element={<Banner />} />
 
         <Route path="/gaming" element={<Gaming />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/gaming/pubg" element={<Pubg />} />
+        <Route path="/gaming/freefire" element={<Freefire />} />
+        <Route path="/gaming/tekken8" element={<Tekken8 />} />
         {/* <Route path="/about" element={<AboutUs />} /> */}
       </Routes>
     </div>

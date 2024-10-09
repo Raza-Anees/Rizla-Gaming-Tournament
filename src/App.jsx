@@ -1,19 +1,35 @@
 import Navbar from "./components/Navbar";
 import "./App.css";
 import { useLocation } from "react-router-dom";
-function App() {
-  const location = useLocation(); // Get current URL path
+import pubgbg from "./assets/pubgbg.jpg";
+import freefirebg from "./assets/freefirebg.jpg";
+import tekken8bg from "./assets/tekken8bg.jpg";
 
-  // Set background style based on the current route
-  const backgroundStyle =
-    location.pathname === "/"
-      ? { backgroundColor: "#000000" } // Home page: background color
-      : {
-          backgroundColor: "#000000",
-          // backgroundImage: `url(${logo})`, // Other pages: background image
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-        };
+function App() {
+  const location = useLocation();
+
+  let backgroundStyle = { backgroundColor: "#000000" };
+  if (location.pathname === "/") {
+    backgroundStyle = { backgroundColor: "#000000" };
+  } else if (location.pathname === "/gaming/pubg") {
+    backgroundStyle = {
+      backgroundImage: `url(${pubgbg})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
+  } else if (location.pathname === "/gaming/freefire") {
+    backgroundStyle = {
+      backgroundImage: `url(${freefirebg})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
+  } else if (location.pathname === "/gaming/tekken8") {
+    backgroundStyle = {
+      backgroundImage: `url(${tekken8bg})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
+  }
 
   return (
     <div style={{ ...backgroundStyle, minHeight: "100vh" }}>
