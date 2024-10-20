@@ -8,6 +8,7 @@ import Pubg from "./Pubg";
 import Tekken8 from "./Tekken8";
 import Freefire from "./Freefire";
 import Aboutus from "./Aboutus";
+
 function Navbar() {
   return (
     <div>

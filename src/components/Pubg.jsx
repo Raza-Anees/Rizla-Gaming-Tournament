@@ -12,7 +12,7 @@ function Pubg() {
     <>
       <div className="flex justify-center xl:justify-end md:justify-center sm:justify-center ">
         <div className="mt-8 mr-12 xl:mt-36 xl:mr-44 md:mt-36 sm:mt-36  space-y-3">
-          <div className=" xl:flex xl:inline-block xl:space-x-2 md:flex md:inline-block md:space-x-2 sm:flex sm:inline-block sm:space-x-2  ">
+          <div className=" xl:flex xl:space-x-2 md:flex md:space-x-2 sm:flex sm:space-x-2  ">
             <div className="space-y-2 ">
               <label
                 className="text-white font-bold text-lg tracking-wide mb-2 inline-block 
@@ -46,7 +46,7 @@ function Pubg() {
               />
             </div>
           </div>
-          <div className="xl:flex xl:inline-block xl:space-x-2 md:flex md:inline-block md:space-x-2 sm:flex sm:inline-block sm:space-x-2">
+          <div className="xl:flex xl:space-x-2 md:flex md:space-x-2 sm:flex sm:space-x-2">
             <div className="space-y-2">
               <label
                 className="text-white font-bold text-lg tracking-wide mb-2 inline-block 
@@ -80,7 +80,7 @@ function Pubg() {
               />
             </div>
           </div>
-          <div className="xl:flex xl:inline-block xl:space-x-2 md:flex md:inline-block md:space-x-2 sm:flex sm:inline-block sm:space-x-2">
+          <div className="xl:flex xl:space-x-2 md:flex md:space-x-2 sm:flex sm:space-x-2">
             <div className="space-y-2">
               <label
                 className="text-white font-bold text-lg tracking-wide mb-2 inline-block 

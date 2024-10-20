@@ -35,7 +35,7 @@ function Gaming() {
       <div className="text-center mt-8 font-extrabold text-4xl ">
         <span className="word text-white">WELCOME </span>
         <span className="word1 text-white">TO </span>
-        <span className="word2 text-white">THE </span>
+        <span className="word2 text-white ">THE </span>
         <span className="word3 text-white">BATTLEFIELD </span>
       </div>
       <div className="text-center mt-6 font-bold text-xl ">
